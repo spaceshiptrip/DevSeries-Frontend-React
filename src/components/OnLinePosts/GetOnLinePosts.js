@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Table from '../Table/DynamicTables';
+import Table from '../Table/DynamicTable';
 import './GetOnLinePosts.css'
 import CONFIG from '../../config.json';
 
