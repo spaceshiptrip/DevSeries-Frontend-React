@@ -8,8 +8,11 @@ export default class App extends React.Component {
     constructor(props) {
       super(props);
 
-      // this.state = localJson;
-      this.state = { jsonFile: localJson}; 
+      this.state = { jsonFile: localJson};
+
+      // this is used to expose for testing, is the good practice?
+      window.appComponent = this;
+
     }
 
     getLocalJson = function() {
