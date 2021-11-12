@@ -1,8 +1,16 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen} from '@testing-library/react'
 
-test('renders learn react link', () => {
+import App from './App.js';
+import testJson from './components/LocalPosts/local.json'
+
+
+// test('check local json equality',() => {
+//     expect(App.getLocalJson()).toBe(testJson);
+// })
+
+test('renders table', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+  const textElement = screen.getByText(/Hello, React/i);
+  expect (textElement).toBeInTheDocument();
+})
+

@@ -4,23 +4,24 @@ import GetOnlinePosts from './components/OnLinePosts/GetOnLinePosts';
 
 import localJson from './components/LocalPosts/local.json'
 
-
 export default class App extends React.Component {
-    constructor(props){
+    constructor(props) {
       super(props);
 
-      this.state = localJson;
+      // this.state = localJson;
+      this.state = { jsonFile: localJson}; 
+    }
+
+    getLocalJson = function() {
+      return this.state;
     }
     
-    
     render() {
-        
-        
         return (
           <div className="App">
             Hello, React
             <br/> Table 1 data
-            <Table data={this.state}/>
+            <Table data={this.state.jsonFile}/>
             
             <br/> Table 2 data
             <GetOnlinePosts/>
@@ -28,6 +29,5 @@ export default class App extends React.Component {
           
         );
     }
-    
-   
 }
+
