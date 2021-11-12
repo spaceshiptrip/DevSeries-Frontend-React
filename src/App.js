@@ -1,5 +1,5 @@
 import React from 'react';
-import Table from './components/Table/DynamicTables';
+import Table from './components/Table/DynamicTable';
 import GetOnlinePosts from './components/OnLinePosts/GetOnLinePosts';
 
 import localJson from './components/LocalPosts/local.json'
