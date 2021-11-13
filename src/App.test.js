@@ -13,7 +13,7 @@ test('renders table', () => {
   expect (textElement).toBeInTheDocument();
 })
 
-// this does a quick array compare 
+// this does a quick array compare
 // goal is to check JSON equality
 test('compare arrays', () => {
   expect(['mangle', 'lime']).toEqual(['mangle', 'lime']);
