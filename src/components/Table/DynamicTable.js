@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './DynamicTable.css';
+
 export default class Table extends React.Component {
     
     constructor(props){
