@@ -2,6 +2,8 @@ import React from 'react';
 import Table from './components/Table/DynamicTable';
 import GetOnlinePosts from './components/OnLinePosts/GetOnLinePosts';
 
+import PrettyPrintJson from './components/PrettyPrint/PrettyPrint';
+
 import localJson from './components/LocalPosts/local.json'
 
 export default class App extends React.Component {
@@ -28,6 +30,8 @@ export default class App extends React.Component {
             
             <br/> Table 2 data
             <GetOnlinePosts/>
+            <br/><br/><br/>
+            <PrettyPrintJson data={this.state.jsonFile}/>
           </div>
           
         );
