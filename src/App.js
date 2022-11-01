@@ -9,8 +9,10 @@ export default class App extends React.Component {
 
       this.state = localJson;
     }
-    
-    
+
+    componentDidMount() {
+        document.title = "Employee Info";
+    }
     render() {
         
         

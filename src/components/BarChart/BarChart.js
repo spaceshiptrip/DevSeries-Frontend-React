@@ -1,3 +1,4 @@
+// Modified from https://www.createwithdata.com/react-bar-chart
 import { React, Component } from 'react'
 
 function BarGroup(props) {

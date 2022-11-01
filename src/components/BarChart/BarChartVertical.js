@@ -1,3 +1,4 @@
+// Created based on horizontal bar chart code from https://www.createwithdata.com/react-bar-chart
 import { React, Component } from 'react'
 
 function BarGroupVertical(props) {
