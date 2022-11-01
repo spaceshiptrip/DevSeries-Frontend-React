@@ -1,0 +1,24 @@
+.div {
+    display: block;
+}
+
+.title {
+    font-size: 18pt;
+    color: darkcyan;
+}
+
+.body {
+    background-image: url("https://getwallpapers.com/wallpaper/full/0/f/2/270074.jpg")
+}
+
+.item {
+    margin: 10px;
+    font-size: 20pt;
+    color: cyan;
+}
+
+.body {
+    font-size: 16pt;
+    color: black;
+    background-color: silver
+}
